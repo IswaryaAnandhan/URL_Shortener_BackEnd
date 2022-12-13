@@ -28,7 +28,7 @@ let authenticate = function (request, response, next) {
     if (request.headers.authorization) {
       let verify = jwt.verify(
         request.headers.authorization,
-        process.env.SECRET 
+        jwt_secret
       );
       console.log(verify);
       if (verify) {
@@ -124,7 +124,7 @@ app.post("/register", async function (request, response) {
               pass: PASSWORD,
             },
           });
-         let link = "https://scintillating-raindrop-654c62.netlify.app/activate-account/"
+         let link = "https://scintillating-raindrop-654c62.netlify.app/activate-account"
           var mailOptions = {
             from: FROM,
             to: mailid,

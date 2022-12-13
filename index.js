@@ -124,7 +124,7 @@ app.post("/register", async function (request, response) {
               pass: PASSWORD,
             },
           });
-         let link = "https://scintillating-raindrop-654c62.netlify.app/activate-account/"
+         let link = "https://scintillating-raindrop-654c62.netlify.app/activate-account"
           var mailOptions = {
             from: FROM,
             to: mailid,

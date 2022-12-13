@@ -1,1 +1,1 @@
-module.exports = 'http://localhost:3007' 
+module.exports = 'https://url-shortener-backend-489g.onrender.com' 
